@@ -12,7 +12,7 @@ const EditUserModal = ({ user, setUser }) => {
 
     // Get Sectors From Database
     useEffect(() => {
-        fetch('http://localhost:5000/sectors')
+        fetch('https://task-1-server-iota.vercel.app/sectors')
             .then(res => res.json())
             .then(data => setSectorsObj(data))
     }, []);
@@ -25,7 +25,7 @@ const EditUserModal = ({ user, setUser }) => {
         // Get User Id
         const userId = localStorage.getItem('userId');
         // Edit User Of Database
-        fetch(`http://localhost:5000/user/${userId}`, {
+        fetch(`https://task-1-server-iota.vercel.app/user/${userId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

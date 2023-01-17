@@ -8,7 +8,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <UserForm></UserForm>,
-        loader: () => fetch('http://localhost:5000/sectors')
+        loader: () => fetch('https://task-1-server-iota.vercel.app/sectors')
     },
     {
         path: '/userdata',

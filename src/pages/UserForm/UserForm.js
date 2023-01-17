@@ -20,7 +20,7 @@ const UserForm = () => {
         // Set Save User Loading
         setSaveUserLoading(true);
         // Post Data To Database
-        fetch('http://localhost:5000/user', {
+        fetch('https://task-1-server-iota.vercel.app/user', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

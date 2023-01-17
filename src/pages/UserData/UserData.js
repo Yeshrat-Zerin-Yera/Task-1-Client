@@ -14,7 +14,7 @@ const UserData = () => {
     // Get User From Database
     useEffect(() => {
         if (userId) {
-            fetch(`http://localhost:5000/user/${userId}`)
+            fetch(`https://task-1-server-iota.vercel.app/user/${userId}`)
                 .then(res => res.json())
                 .then(data => setUser(data))
         }
